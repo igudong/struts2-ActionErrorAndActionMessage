@@ -25,7 +25,7 @@ public class LoginAction extends ActionSupport {
 
 	// business logic
 	public String execute() {
-
+		System.out.println("进入execute方法");
 		return "SUCCESS";
 
 	}
