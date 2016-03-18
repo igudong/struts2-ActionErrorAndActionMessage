@@ -30,7 +30,10 @@ public class LoginAction extends ActionSupport {
 
 	}
 
-	// simple validation
+	/*
+	 * 当重写了validate()方法的时候，进入action请求会进行验证，，验证通过会进入execute()方法，
+	 * 如果验证不通过，则返回不进入execute()方法，直接返回请求
+	 */
 	public void validate() {
 		if ("yiibai.com".equals(getUsername())) {
 			addActionMessage("You are valid user!");
