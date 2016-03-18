@@ -23,8 +23,8 @@
 			<s:actionerror />
 		</div>
 	</s:if>
-	
-	
+
+
 	<s:form action="/servletimpl/validateUser">
 		<s:textfield key="global.username" name="username" />
 		<s:password key="global.password" name="password" />
